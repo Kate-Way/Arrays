@@ -1,0 +1,21 @@
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+    # set two pointers at the at the beginning and the end of the list
+        a = 0 
+        b = len(height) - 1
+        container_volume = 0
+
+        while a < b:
+    # to calculate volume set width and height parameters 
+            width = b - a  
+            hgt = min(height[a], height[b]) 
+            volume = width * hgt
+            container_volume = max(volume, container_volume)
+
+    # move lesser of pointers since it's the pointer that creates the upper bound of the wall height
+            if height[a] < height[b]:  
+                a += 1  
+            else:
+                b -= 1
+
+        return container_volume
