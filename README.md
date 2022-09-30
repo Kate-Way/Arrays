@@ -15,3 +15,11 @@ Return the maximum amount of water a container can store (you may not slant the 
 Example:
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
+
+# 717. 1-bit and 2-bit Characters
+We have two special characters: The first character can be represented by one bit 0.
+The second character can be represented by two bits (10 or 11).
+Given a binary array bits that ends with 0, return true if the last character must be a one-bit character.
+Examples:
+bits = [1,1,0,1,1,1,0] False
+bits = [1,1,0] True
