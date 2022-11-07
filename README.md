@@ -22,6 +22,10 @@ You must write an algorithm with O(log n) runtime complexity.
 Input: nums = [1,3,5,6], target = 7
 Output: 4
 
+# 189. Given an array, rotate the array to the right by k steps, where k is non-negative.
+Input: nums = [-1,-100,3,99], k = 2
+Output: [3,99,-1,-100]
+
 # 717. 1-bit and 2-bit Characters
 We have two special characters: The first character can be represented by one bit 0.
 The second character can be represented by two bits (10 or 11).
@@ -29,3 +33,5 @@ Given a binary array bits that ends with 0, return true if the last character mu
 Examples:
 bits = [1,1,0,1,1,1,0] False
 bits = [1,1,0] True
+
+
